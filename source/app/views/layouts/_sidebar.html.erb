@@ -1,0 +1,13 @@
+<div class="row-fluid">
+  <div class="span3">
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li><%= link_to "Crawl!", crawl_offers_path, class: 'btn'  %></li>
+      </ul>
+    </div><!--/.well -->
+  </div><!--/span-->
+  <div class="span9">
+    <%= bootstrap_flash %>
+    <%= yield %>
+  </div>
+</div><!--/row-->

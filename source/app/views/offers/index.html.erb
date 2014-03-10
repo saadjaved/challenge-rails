@@ -1,0 +1,14 @@
+<%- model_class = Offer -%>
+<div class="page-header">
+  <h1><%= t '.title', :default => "#{@offers.count} #{model_class.model_name.human.pluralize.titleize}" %></h1>
+</div>
+<% if @offers.present? %>
+  <% @offers.each do |offer| %>
+    <%= render 'offer',  {offer: offer} %>
+  <% end %>
+<% else %>
+  <div class="hero-unit">
+    <h3>No Offers Available.</h3>
+    <p>Hit the crawl button to get some offers.</p>
+  </div>
+<% end %>
