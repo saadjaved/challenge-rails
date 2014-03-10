@@ -8,7 +8,7 @@
 - Create a file `config/application.yml` and set your environment variables "PUSHER_APP_URL", "PUSHER_APP_KEY" accordingly
 - `rails s` to start server
 - Open *http://localhost:3000/* in a web browser
- - To run test cases: `bundle exec rspec`
+- To run test cases: `bundle exec rspec`
 - - -
 **Description**
 
@@ -27,9 +27,8 @@ Following gems are used:
 - *figaro*
 - *vcr*
 - - -
-**A few comments**
+**Assumptions and Implementation**
 
-- When 'Crawl!' button is clicked, the screen seem to be stuck for a while due to turbolinks. Wait for a few seconds and the page will show the content. An activity indicator can be added while the data is being loaded.
 - As user cannot create/update/delete offers so its related actions are not implemented.
 - `/app/model/offer_fetcher.rb` is the class to handle API integration.
 - `/fixtures/vcr_cassettes/` has offers that will be used in tests.
