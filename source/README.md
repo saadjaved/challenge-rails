@@ -8,8 +8,9 @@
 - Create a file `config/application.yml` and set your environment variables "PUSHER_APP_URL", "PUSHER_APP_KEY" accordingly
 - `rails s` to start server
 - Open *http://localhost:3000/* in a web browser
-- To run test cases: `bundle exec rspec`
-- - -
+- To run test cases: `bundle exec rspec`  
+
+- - -  
 **Description**
 
 The solution is based on Ruby 2.0 and Rails 4.0.2.
@@ -25,8 +26,9 @@ Following gems are used:
 - *less-rails*
 - *twitter-bootstrap-rails*
 - *figaro*
-- *vcr*
-- - -
+- *vcr*  
+
+- - -  
 **Assumptions and Implementation**
 
 - As user cannot create/update/delete offers so its related actions are not implemented.
